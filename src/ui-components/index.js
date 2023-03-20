@@ -35,3 +35,5 @@ export { default as HeroLayout4 } from "./HeroLayout4";
 export { default as HeroLayout2 } from "./HeroLayout2";
 export { default as ProfileCard } from "./ProfileCard";
 export { default as studioTheme } from "./studioTheme";
+export { default as HomeCreateForm } from "./HomeCreateForm";
+export { default as HomeUpdateForm } from "./HomeUpdateForm";

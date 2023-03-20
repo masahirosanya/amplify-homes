@@ -30,6 +30,8 @@ export declare type MarketingFooterOverridesProps = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do."?: PrimitiveOverrideProps<TextProps>;
 } & EscapeHatchProps;
 export declare type MarketingFooterProps = React.PropsWithChildren<Partial<ViewProps> & {
+    breakpoint?: String;
+} & {
     overrides?: MarketingFooterOverridesProps | undefined | null;
 }>;
 export default function MarketingFooter(props: MarketingFooterProps): React.ReactElement;

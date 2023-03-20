@@ -9,7 +9,7 @@ import * as React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Text, TextField, View } from "@aws-amplify/ui-react";
 export default function MarketingFooter(props) {
-  const { overrides, ...rest } = props;
+  const { breakpoint, overrides, ...rest } = props;
   return (
     <View
       width="1440px"
@@ -24,7 +24,7 @@ export default function MarketingFooter(props) {
       {...rest}
     >
       <View
-        width="1440px"
+        width="100%"
         height="400px"
         display="block"
         gap="unset"

@@ -1,6 +1,8 @@
 import React from "react";
 import './App.css';
-import { NewHomes, NavBar, MarketingFooter } from './ui-components'
+import { NewHomes, NavBar, MarketingFooter} from './ui-components'
+import { withAuthenticator } from '@aws-amplify/ui-react'; // 認証に必要
+
 
 function App() {
   return (
@@ -12,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
