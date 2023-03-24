@@ -5,11 +5,15 @@
  **************************************************************************/
 
 /* eslint-disable */
-// import * as React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import * as React from "react";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function HomeCard(props) {
   const { home, overrides, ...rest } = props;
+  const imageOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <View
       width="320px"
@@ -75,6 +79,9 @@ export default function HomeCard(props) {
         padding="0px 0px 0px 0px"
         objectFit="cover"
         src={home?.image_url}
+        onClick={() => {
+          imageOnClick();
+        }}
         {...getOverrideProps(overrides, "image")}
       ></Image>
     </View>

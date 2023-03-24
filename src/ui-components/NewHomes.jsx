@@ -30,6 +30,7 @@ export default function NewHomes(props) {
   return (
     <Collection
       type="grid"
+      isSearchable={true}
       searchPlaceholder="Search..."
       templateColumns="1fr 1fr 1fr"
       autoFlow="row"
